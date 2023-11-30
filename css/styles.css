@@ -52,5 +52,7 @@ body {
 
 .content {
     margin-left: 300px; /* Ensure content doesn't overlap with the panel */
+    background-color: #000;
+    font-color: #fff;
     padding: 20px;
 }
