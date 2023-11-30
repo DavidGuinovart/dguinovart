@@ -115,7 +115,7 @@ footer {
 
         /* Individual Blocks */
         .block25 {
-            flex: 1 1 calc(25% - 20px); /* Adjust the percentage width and gap */
+            flex: 1 1 calc(10% - 20px); /* Adjust the percentage width and gap */
             padding: 20px;
         }
         .block50 {
