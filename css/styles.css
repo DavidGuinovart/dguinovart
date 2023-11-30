@@ -51,7 +51,7 @@ body {
 }
 
 .content {
-    margin-left: 400px; /* Matching the width of the navigation */
+    margin-left: 300px; /* Matching the width of the navigation */
     background-color: #000;
     color: #fff;
     padding: 20px;
