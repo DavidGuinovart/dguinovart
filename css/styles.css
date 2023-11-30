@@ -5,52 +5,80 @@ body {
     padding: 0;
 }
 
-.side-panel {
+/* Navigation Styles */
+nav {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     width: 300px; /* Increased width for the navigation panel */
     background-color: #fff;
-    padding-top: 20px;
+    padding-top: 60px; /* Adjust to avoid overlapping with the content */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.side-panel .header {
-    text-align: center;
-    padding: 20px;
-}
-
-.side-panel .header img {
-    width: 150px; /* Adjust the width of the photo */
-    border-radius: 50%; /* Optional: Makes the photo round */
-    margin-bottom: 10px;
-}
-
-.side-panel nav ul {
+nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.side-panel nav ul li {
+nav ul li {
     margin: 10px 0;
-    text-align: center;
 }
 
-.side-panel nav ul li a {
-    text-decoration: none;
-    color: #333;
+nav ul li a {
     display: block;
-    padding: 8px 0;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.side-panel nav ul li a:hover {
-    color: #1a73e8; /* Dark blue color on hover */
+nav ul li a:hover {
+    color: #1a73e8; /* Dark blue color for hover effect */
 }
 
-.content {
-    margin-left: 300px; /* Ensure content doesn't overlap with the panel */
+/* Main Content Styles */
+main {
+    margin-left: 300px; /* Matching the width of the navigation */
+    background-color: #000;
+    color: #fff;
     padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Links Styles */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffcc00; /* Yellow color for hover effect */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    nav {
+        width: 100%; /* Adjust to occupy full width on smaller screens */
+        position: static; /* Remove fixed positioning for better mobile display */
+        padding-top: 20px; /* Adjust padding for better spacing */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for better spacing */
+    }
+
+    main {
+        margin-left: 0; /* Remove margin for full-width content on mobile */
+        padding: 10px; /* Adjust padding for better spacing */
+    }
 }
