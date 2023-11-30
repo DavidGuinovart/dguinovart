@@ -51,11 +51,11 @@ body {
 }
 
 .content {
-    margin-left: 300px; /* Matching the width of the navigation */
-    width: 600px;
+    margin-left: 400px; /* Matching the width of the navigation */
     background-color: #000;
     color: #fff;
     padding: 20px;
+     margin-right: 100px;
 }
 
 /* Footer Styles */
