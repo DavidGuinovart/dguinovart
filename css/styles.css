@@ -76,7 +76,6 @@ body {
 /* Main Content Styles */
 .content {
     margin-left: 300px; /* Ensure content doesn't overlap with the panel */
-    width: 50%;
     padding: 20px;
     background-color: #000;
     color: #fff;
