@@ -5,38 +5,49 @@ body {
     padding: 0;
 }
 
-/* Navigation Styles */
-nav {
+.side-panel {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     width: 300px; /* Increased width for the navigation panel */
     background-color: #fff;
-    padding-top: 60px; /* Adjust to avoid overlapping with the content */
+    padding-top: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+.side-panel .header {
+    text-align: center;
+    padding: 20px;
+}
+
+.side-panel .header img {
+    width: 150px; /* Adjust the width of the photo */
+    border-radius: 50%; /* Optional: Makes the photo round */
+    margin-bottom: 10px;
+}
+
+.side-panel nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
+.side-panel nav ul li {
     margin: 10px 0;
+    text-align: center;
 }
 
-nav ul li a {
-    display: block;
-    padding: 10px;
-    color: #000;
+.side-panel nav ul li a {
     text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #1a73e8; /* Dark blue color for hover effect */
+.side-panel nav ul li a:hover {
+    color: #1a73e8; /* Dark blue color on hover */
 }
 
 /* Main Content Styles */
