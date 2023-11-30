@@ -51,11 +51,11 @@ body {
 }
 
 /* Main Content Styles */
-main {
-    margin-left: 300px; /* Matching the width of the navigation */
+.content {
+    margin-left: 300px; /* Ensure content doesn't overlap with the panel */
+    padding: 20px;
     background-color: #000;
     color: #fff;
-    padding: 20px;
 }
 
 /* Footer Styles */
