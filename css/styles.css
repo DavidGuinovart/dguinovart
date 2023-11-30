@@ -64,3 +64,22 @@ a {
 a:hover {
     color: #ffcc00; /* Yellow color for hover effect */
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    nav {
+        width: 100%; /* Adjust to occupy full width on smaller screens */
+        position: static; /* Remove fixed positioning for better mobile display */
+        padding-top: 20px; /* Adjust padding for better spacing */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for better spacing */
+    }
+
+    main {
+        margin-left: 0; /* Remove margin for full-width content on mobile */
+        padding: 10px; /* Adjust padding for better spacing */
+    }
+}
+
