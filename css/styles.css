@@ -51,8 +51,40 @@ body {
 }
 
 .content {
-    margin-left: 300px; /* Ensure content doesn't overlap with the panel */
+    margin-left: 300px; /* Matching the width of the navigation */
     background-color: #000;
-    font-color: #fff;
+    color: #fff;
     padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    nav {
+        width: 100%; /* Adjust to occupy full width on smaller screens */
+        position: static; /* Remove fixed positioning for better mobile display */
+        padding-top: 20px; /* Adjust padding for better spacing */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for better spacing */
+    }
+
+    main {
+        margin-left: 0; /* Remove margin for full-width content on mobile */
+        padding: 10px; /* Adjust padding for better spacing */
+    }
 }
