@@ -65,10 +65,47 @@ footer {
     color: #fff;
 }
 
+<style>
+        /* Styling for the paragraph with a bar */
+        .paragraph-with-bar {
+            position: relative;
+            padding-left: 20px; /* Space for the bar */
+        }
 
+        /* Bar styles using ::before pseudo-element */
+        .paragraph-with-bar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px; /* Width of the bar */
+            height: 100%; /* Full height of the paragraph */
+            background-color: #1a73e8; /* Color of the bar */
+        }
+    </style>
 
+        <style>
+        /* Custom Styles */
+        .highlighted-text {
+            background-color: rgba(0, 0, 0, 1);
+            color: rgba(23, 166, 133, 1); /* Text color */
+            padding: 3px 5px; /* Adjust padding for better appearance */
+            font-weight: bold; /* Make text bold */
+        }
+    </style>
 
+    <style>
+        /* Link Styles */
+        a {
+            color: rgba(255, 148, 112, 1); /* Font color for links */
+            text-decoration: none; /* Remove default underline */
+            transition: color 0.3s ease; /* Smooth transition on color change */
+        }
 
+        a:hover {
+            color: rgba(23, 166, 133, 1); /* Font color on hover */
+        }
+    </style>
 
 
 /* Media Query for Mobile Devices */
