@@ -139,6 +139,10 @@ footer {
             display: inline-block;
         }
 
+.container img {
+            width: 100%;
+            height: auto;
+}
         .text-on-image {
             position: absolute;
             top: 50%;
