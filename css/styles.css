@@ -114,13 +114,20 @@ footer {
         }
 
         /* Individual Blocks */
-        .block25 {
-            flex: 0 0 calc(10% - 20px); /* Adjust the percentage width and gap */
-            padding: 20px;
+        .block-1 {
+            flex: 0 0 calc(10% - 20px); /* 10% width with gap */
+            height: 100%; /* Height for visualization */
+            margin-right: 20px; /* Adjusted right margin for gap */
         }
-        .block50 {
-            flex: 0 0 calc(50% - 20px); /* Adjust the percentage width and gap */
-            padding: 20px;
+
+        .block-2 {
+            flex: 0 0 calc(50% - 20px); /* 50% width with gap */
+            height: 100%; /* Height for visualization */
+            margin-right: 20px; /* Adjusted right margin for gap */
+        }
+        .block-3 {
+            flex: 0 0 calc(10% - 20px); /* 10% width with gap */
+            height: 100%; /* Height for visualization */
         }
 
 
