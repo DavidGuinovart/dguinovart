@@ -52,7 +52,7 @@ body {
 
 .content {
     margin-left: 300px; /* Matching the width of the navigation */
-    width: 60%;
+    width: 600px;
     background-color: #000;
     color: #fff;
     padding: 20px;
