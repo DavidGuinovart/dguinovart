@@ -11,7 +11,7 @@ nav {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 200px;
+    width: 300px; /* Increased width for the navigation panel */
     background-color: #fff;
     padding-top: 60px; /* Adjust to avoid overlapping with the content */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -41,7 +41,7 @@ nav ul li a:hover {
 
 /* Main Content Styles */
 main {
-    margin-left: 200px; /* Matching the width of the navigation */
+    margin-left: 300px; /* Matching the width of the navigation */
     background-color: #000;
     color: #fff;
     padding: 20px;
