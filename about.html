@@ -4,11 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Home</title>
+    <title>David Abou Me</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Styling for the paragraph with a bar */
+        .paragraph-with-bar {
+            position: relative;
+            padding-right: 20px; /* Space for the bar */
+        }
+
+        /* Bar styles using ::after pseudo-element */
+        .paragraph-with-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px; /* Width of the bar */
+            height: 100%; /* Full height of the paragraph */
+            background-color: #1a73e8; /* Color of the bar */
+        }
+    </style>
 </head>
 
 <body>
+     <div class="side-panel">
+        <div class="header">
+            <img src="files/hexagon.png" alt="Your Photo">
+            <h2>Your Name</h2>
+            <p>Your Description</p>
+        </div>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -19,15 +43,22 @@
             <li><a href="portfolio.html">Portfolio</a></li>
         </ul>
     </nav>
-
-   <div class="content">
-        <section>
-    <h1>About Me</h1>
-    <p>This is the about page section.</p>
-      </section>
+ </div>
+     <div class="content">
+        <!-- Your main content goes here -->
+        <h1>About me</h1>
+         <p class="paragraph-with-bar">I am an Assistant Professor at The Hormel Institute, 
+             where I use my strong background in mathematics and computer science to make new 
+             discoveries in bioscience research. I came from Cuba, where I got my Bachelor's in Mathematics from the University of Havana. 
+             Then, I moved to the United States and earned my Ph.D. in Applied Mathematics from the University of Central Florida. I have always been passionate about mathematics and how it can help solve problems in different scientific fields. 
+             My research focuses on the complex mathematical modeling of essential topics in bioscience, such as epidemiology, cell proliferation, and material science. 
+             I have taught mathematics at prestigious universities like the University of Havana, the University of Central Florida, and the University of Delaware. Still, my main interest is in doing innovative research. The Hormel Institute has allowed me to combine my mathematical skills with advanced tools, 
+             such as high-quality datasets and insights into cancer research. My role involves leading my own projects and collaborating with other faculty members, 
+             which helps me contribute to the institute's overall mission. When I am not working, I enjoy spending time by the sea, which reminds me of my Cuban roots 
+             and gives me peace and relaxation. I also love traveling with my family and exploring different states in the US and countries in Europe. 
+             I want to share the beauty of diverse cultures with my child and appreciate the value of global unity and understanding.</p>
     </div>
-
-    <footer>
+             <footer>
         <p>&copy; 2023 Your Name. All rights reserved.</p>
     </footer>
 </body>
