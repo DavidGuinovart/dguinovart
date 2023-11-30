@@ -59,6 +59,7 @@ body {
     color: #fff;
     padding: 20px;
     margin-right: 0px;
+    grid-row: 2; /* Ensuring the content spans the second row */
 }
 
 /* Footer Styles */
