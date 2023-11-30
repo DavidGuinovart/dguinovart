@@ -23,7 +23,7 @@ body {
 
 .side-panel .header img {
     width: 150px; /* Adjust the width of the photo */
-    border-radius: 50%; /* Optional: Makes the photo round */
+    /*border-radius: 50%;  Optional: Makes the photo round */
     margin-bottom: 10px;
 }
 
