@@ -104,10 +104,19 @@ footer {
             color: rgba(23, 166, 133, 1); /* Font color on hover */
         }
 
-.specific-width {
-            width: 300px; /* Specific width for the block */
-            background-color: #f0f0f0; /* Background color for visualization */
-            padding: 20px; /* Padding for content inside the block */
+
+        /* Container for Blocks */
+        .block-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Individual Blocks */
+        .block {
+            flex: 1 1 calc(33.33% - 20px); /* Adjust the percentage width and gap */
+            padding: 20px;
         }
 
 
