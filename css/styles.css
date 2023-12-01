@@ -59,12 +59,11 @@ body {
     padding: 20px;
     margin-right: 0px;
     flex: 1;
-    min-height: calc(100vh - 40px); /* Adjust according to your footer height and padding */
+    min-height: calc(100vh - 140px); /* Adjust according to your footer and header height */
     overflow-y: auto; /* Enable vertical scrollbar if content exceeds space */
-    margin-bottom: 80px; /* Adjust according to your footer height */
     display: flex;
     flex-direction: column;
-    position: relative; /* Needed for positioning the footer */
+    position: relative;
 }
 
 /* Footer Styles */
@@ -74,8 +73,10 @@ footer {
     background-color: #333;
     color: #fff;
     width: calc(100% - 300px); /* Adjust the width to exclude side-panel width */
+    height: 60px; /* Height of the footer */
     position: fixed;
     bottom: 0;
+    left: 300px; /* Align with the right edge of the side panel */
     z-index: 1;
 }
 
