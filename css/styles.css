@@ -191,7 +191,7 @@ footer {
 .download-btn {
     display: inline-block;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 8px; /* Adjust border radius for round corners */
     text-decoration: none;
     color: white;
     background-color: rgba(255, 148, 112, 1);
