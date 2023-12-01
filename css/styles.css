@@ -54,12 +54,13 @@ body {
 }
 
 .content {
-    margin-left: 300px; /* Matching the width of the navigation */
+    margin-left: 300px;
     background-color: #000;
     color: #fff;
     padding: 20px;
     margin-right: 0px;
     flex: 1;
+    min-height: calc(100vh - 40px); /* Adjust according to your footer height and padding */
     overflow-y: auto; /* Enable vertical scrollbar if content exceeds space */
 }
 
