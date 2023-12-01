@@ -248,3 +248,15 @@ footer p {
         padding: 10px; /* Adjust padding for better spacing */
     }
 }
+
+.custom-header {
+    color: rgba(255, 148, 112, 1);
+    /* Additional styling for headers can be added here */
+}
+
+/* Style for the link within header 2 */
+.custom-header h2 a {
+    color: rgba(255, 148, 112, 1);
+    text-decoration: none; /* Remove underline from the link */
+    /* Additional styling for the link can be added here */
+}
