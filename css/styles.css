@@ -5,9 +5,7 @@ body {
     padding: 0;
     font-size: 20px;
     display: flex;
-    flex-direction: column;
     min-height: 100vh; /* Full viewport height */
-    position: relative; /* Added positioning to the body */
 }
 .side-panel {
     position: fixed;
