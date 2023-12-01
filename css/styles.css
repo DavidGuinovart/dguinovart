@@ -237,6 +237,9 @@ footer p {
         width: 100%; /* Adjust to occupy full width on smaller screens */
         position: static; /* Remove fixed positioning for better mobile display */
         padding-top: 20px; /* Adjust padding for better spacing */
+        .block-1, .block-3 {
+        flex-basis: 0; /* Reduce the width of block 1 and block 3 */
+    }
     }
 
     nav ul li {
@@ -261,8 +264,3 @@ footer p {
     /* Additional styling for the link can be added here */
 }
 
-@media (max-width: 768px) {
-    .block-1, .block-3 {
-        flex-basis: 0; /* Reduce the width of block 1 and block 3 */
-    }
-}
