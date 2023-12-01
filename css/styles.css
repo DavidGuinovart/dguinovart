@@ -157,6 +157,30 @@ footer {
             width: 70%; /* Adjust this value to your desired width */
         }
 
+.logo-with-text {
+    display: flex;
+    align-items: center;
+}
+
+.logo-with-text img {
+    max-width: 100px; /* Adjust the max-width of the logo */
+    height: auto;
+    margin-right: 20px; /* Adjust the spacing between logo and text */
+}
+
+.text-next-to-logo {
+    color: #333; /* Text color */
+}
+
+.text-next-to-logo h1 {
+    font-size: 24px; /* Heading font size */
+    margin: 0; /* Remove default margin */
+}
+
+.text-next-to-logo p {
+    font-size: 16px; /* Paragraph font size */
+    margin-top: 5px; /* Adjust space between heading and paragraph */
+}
 
 
 /* Media Query for Mobile Devices */
