@@ -64,19 +64,20 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+    padding-bottom: 20px; /* Reserve space for the footer */
 }
 
 /* Footer Styles */
 footer {
+    /* Your existing footer styles */
     text-align: center;
-    padding: 20px;
+    padding: 10px; /* Smaller padding for a compact footer */
     background-color: #333;
     color: #fff;
-    width: 100%; /* Adjust the width to exclude side-panel width */
-    height: 20px; /* Height of the footer */
-    position: fixed;
+    width: calc(100% - 300px); /* Adjust the width to exclude side-panel width */
+    height: 20px; /* Smaller height for the footer */
+    position: absolute;
     bottom: 0;
-    left: 300px; /* Align with the right edge of the side panel */
     z-index: 1;
 }
 
