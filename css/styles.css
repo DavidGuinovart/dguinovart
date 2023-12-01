@@ -191,15 +191,21 @@ footer {
 .download-btn {
     display: inline-block;
     padding: 10px 20px;
-    border-radius: 8px; /* Adjust border radius for round corners */
+    border-radius: 8px;
     text-decoration: none;
     color: white;
     background-color: rgba(255, 148, 112, 1);
     transition: background-color 0.3s ease;
+    margin-right: 10px; /* Add separation between buttons */
+}
+
+/* Apply margin to all but the last button to prevent extra space after the last button */
+.download-btn:not(:last-child) {
+    margin-right: 10px;
 }
 
 .download-btn:hover {
-    background-color: rgba(200, 100, 70, 1); /* Change the color on hover */
+    background-color: rgba(200, 100, 70, 1);
 }
 
 
