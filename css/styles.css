@@ -45,11 +45,13 @@ body {
     color: #333;
     display: block;
     padding: 8px 0;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
 }
 
 .side-panel nav ul li a:hover {
     color: #1a73e8; /* Dark blue color on hover */
+    border-bottom: 2px solid #1a73e8;
 }
 
 .content {
