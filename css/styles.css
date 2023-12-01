@@ -260,3 +260,9 @@ footer p {
     text-decoration: none; /* Remove underline from the link */
     /* Additional styling for the link can be added here */
 }
+
+@media (max-width: 768px) {
+    .block-1, .block-3 {
+        flex-basis: 0; /* Reduce the width of block 1 and block 3 */
+    }
+}
