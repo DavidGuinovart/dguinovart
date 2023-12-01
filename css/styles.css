@@ -64,14 +64,14 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-bottom: 20px; /* Reserve space for the footer */
+    padding-bottom: 40px; /* Reserve space for the footer */
 }
 
 /* Footer Styles */
 footer {
     /* Your existing footer styles */
     text-align: center;
-    padding: 10px; /* Smaller padding for a compact footer */
+    padding: 5px; /* Smaller padding for a compact footer */
     background-color: #333;
     color: #fff;
     width: calc(100% - 300px); /* Adjust the width to exclude side-panel width */
@@ -79,6 +79,7 @@ footer {
     position: absolute;
     bottom: 0;
     z-index: 1;
+    font-size: 14px; /* Reduce footer font size */
 }
 
         /* Styling for the paragraph with a bar */
