@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     font-size: 20px;
-    display: grid;
-    grid-template-rows: auto 1fr auto; /* Auto header and footer, 1fr content to fill */
+    display: flex;
+    flex-direction: column;
     min-height: 100vh; /* Full viewport height */
 }
 .side-panel {
@@ -69,10 +69,7 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
-    /* Stick the footer to the bottom */
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    margin-top: auto; /* Push footer to the bottom */
     width: 100%;
 }
 
