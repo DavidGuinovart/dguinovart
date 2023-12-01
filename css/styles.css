@@ -68,6 +68,11 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
+    /* Stick the footer to the bottom */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
         /* Styling for the paragraph with a bar */
