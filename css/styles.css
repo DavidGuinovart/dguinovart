@@ -145,8 +145,8 @@ footer {
 }
         .text-on-image {
             position: absolute;
-            top: 25%;
-            left: 25%;
+            top: 40%;
+            left: 40%;
             transform: translate(-50%, -50%);
             color: rgba(255, 148, 112, 1);
             font-size: 15px;
