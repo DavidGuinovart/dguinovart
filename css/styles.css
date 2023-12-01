@@ -145,11 +145,11 @@ footer {
 }
         .text-on-image {
             position: absolute;
-            top: 40%;
+            top: 25%;
             left: 40%;
             transform: translate(-50%, -50%);
             color: rgba(255, 148, 112, 1);
-            font-size: 15px;
+            font-size: 18px;
             font-weight: bold;
             text-align: left;
             background-color: rgba(0, 0, 0, 0.5);
