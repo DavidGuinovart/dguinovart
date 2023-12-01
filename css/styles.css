@@ -182,33 +182,6 @@ footer {
     margin-top: 5px; /* Adjust space between heading and paragraph */
 }
 
-.download-buttons {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-
-.download-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
-    background-color: rgba(255, 148, 112, 1);
-    transition: background-color 0.3s ease;
-    margin-right: 10px; /* Add separation between buttons */
-}
-
-/* Apply margin to all but the last button to prevent extra space after the last button */
-.download-btn:not(:last-child) {
-    margin-right: 10px;
-}
-
-.download-btn:hover {
-    background-color: rgba(200, 100, 70, 1);
-}
-
-
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     nav {
