@@ -74,7 +74,7 @@ footer {
     padding: 5px; /* Smaller padding for a compact footer */
     background-color: #333;
     color: #fff;
-    width: calc(100% - 300px); /* Make the footer span the entire width */
+    width: 100%; /* Make the footer span the entire width */
     height: 20px; /* Smaller height for the footer */
     position: absolute;
     bottom: 0;
