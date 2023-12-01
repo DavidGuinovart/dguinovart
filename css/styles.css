@@ -73,7 +73,7 @@ footer {
     background-color: #333;
     color: #fff;
     width: 100%; /* Adjust the width to exclude side-panel width */
-    height: 40px; /* Height of the footer */
+    height: 20px; /* Height of the footer */
     position: fixed;
     bottom: 0;
     left: 300px; /* Align with the right edge of the side panel */
