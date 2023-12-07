@@ -251,8 +251,7 @@ footer p {
     }
 
     .side-panel {
-        width: auto; /* Adjust width to fit content */
-        position: static; /* Remove fixed positioning for mobile */
+        display: none; /* Hide the side panel */
     }
 
     .content {
@@ -266,12 +265,7 @@ footer p {
         margin-right: 0; /* Remove right margin */
     }
 
-    /* Converting navigation into a dropdown menu */
-    /* Hide the side panel */
-    .side-panel {
-        display: none;
-    }
-     /* Display the navigation on top */
+    /* Display the navigation on top */
     header {
         display: flex;
         justify-content: space-between;
