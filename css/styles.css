@@ -230,6 +230,17 @@ footer p {
 .download-btn:hover {
     background-color: rgba(200, 100, 70, 1);
 }
+.custom-header {
+    color: rgba(255, 148, 112, 1);
+    /* Additional styling for headers can be added here */
+}
+
+/* Style for the link within header 2 */
+.custom-header h2 a {
+    color: rgba(255, 148, 112, 1);
+    text-decoration: none; /* Remove underline from the link */
+    /* Additional styling for the link can be added here */
+}
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
@@ -250,17 +261,18 @@ footer p {
         margin-left: 0; /* Remove margin for full-width content on mobile */
         padding: 10px; /* Adjust padding for better spacing */
     }
+.side-panel {
+        width: 100%; /* Adjust to occupy full width on smaller screens */
+        position: static; /* Remove fixed positioning for better mobile display */
+        /* Adjust other styles as needed */
+    }
+
+  .block-1:empty,
+.block-3:empty {
+        display: none;
+    }
+
 }
 
-.custom-header {
-    color: rgba(255, 148, 112, 1);
-    /* Additional styling for headers can be added here */
-}
 
-/* Style for the link within header 2 */
-.custom-header h2 a {
-    color: rgba(255, 148, 112, 1);
-    text-decoration: none; /* Remove underline from the link */
-    /* Additional styling for the link can be added here */
-}
 
