@@ -241,7 +241,7 @@ footer p {
     text-decoration: none; /* Remove underline from the link */
     /* Additional styling for the link can be added here */
 }
-
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     /* Hiding unnecessary blocks and adjusting layout for small screens */
