@@ -267,7 +267,7 @@ footer p {
 
     /* Converting navigation into a dropdown menu */
     .side-panel .header {
-        display: none; /* Hide header */
+        display: block; /* Display header */
     }
 
     .side-panel nav ul {
