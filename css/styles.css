@@ -244,35 +244,30 @@ footer p {
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
-    nav {
+    .side-panel {
         width: 100%;
-        position: static;
-        padding-top: 20px;
+        position: static; /* Change to 'static' to remove fixed positioning */
     }
 
     .block-1,
     .block-3 {
-        flex-basis: 0;
+        flex-basis: unset; /* Reset flex-basis */
+        width: 100%; /* Make blocks occupy full width on mobile */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .block-1:empty,
+    .block-3:empty {
+        display: none; /* Hide empty blocks on mobile */
     }
 
     nav ul li {
-        margin: 5px 0;
+        margin: 5px 0; /* Adjust list item margins */
     }
 
     main {
         margin-left: 0;
         padding: 10px;
-    }
-
-    .side-panel {
-        width: 100%;
-        position: static;
-        /* Add any additional necessary styles */
-    }
-
-    .block-1:empty,
-    .block-3:empty {
-        display: none;
     }
 }
 
