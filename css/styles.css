@@ -245,7 +245,8 @@ footer p {
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     /* Hiding unnecessary blocks and adjusting layout for small screens */
-    .block-1, .block-3 {
+    .block-1,
+    .block-3 {
         display: none; /* Hide blocks 1 and 3 */
     }
 
@@ -267,36 +268,37 @@ footer p {
 
     /* Converting navigation into a dropdown menu */
     .side-panel .header {
-        display: block; /* Display header */
+        background-color: #fff; /* White background */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .side-panel .header img {
+        display: none; /* Hide the logo in mobile view */
     }
 
     .side-panel nav ul {
         display: block; /* Display as a block for dropdown */
-        text-align: center; /* Center the items */
+        list-style: none; /* Remove list styles */
+        padding: 0;
+        margin: 0;
     }
 
     .side-panel nav ul li {
         margin: 10px 0; /* Adjust margin for better spacing */
+        text-align: center; /* Center the items */
     }
 
-    /* Logo in the top left corner */
-    .logo-with-text {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        display: flex;
-        align-items: center;
+    .side-panel nav ul li a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        padding: 8px 0;
+        transition: color 0.3s ease;
+        border-bottom: 2px solid transparent;
     }
 
-    .logo-with-text img {
-        max-width: 50px; /* Adjust the max-width of the logo */
-        margin-right: 5px; /* Adjust the spacing between logo and text */
-    }
-
-    /* Menu to the right */
-    .side-panel nav {
-        position: absolute;
-        top: 10px;
-        right: 10px;
+    .side-panel nav ul li a:hover {
+        color: #1a73e8; /* Dark blue color on hover */
+        /*border-bottom: 2px solid #1a73e8;*/
     }
 }
