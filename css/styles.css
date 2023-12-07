@@ -267,28 +267,51 @@ footer p {
     }
 
     /* Converting navigation into a dropdown menu */
-    .side-panel .header {
-        background-color: #fff; /* White background */
-        padding: 10px; /* Adjust padding */
+    /* Hide the side panel */
+    .side-panel {
+        display: none;
+    }
+     /* Display the navigation on top */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    .side-panel .header img {
-        display: none; /* Hide the logo in mobile view */
+    /* Style the dropdown navigation */
+    header nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    .side-panel nav ul {
-        display: block; /* Display as a block for dropdown */
-        list-style: none; /* Remove list styles */
+    header:hover nav {
+        display: block;
+    }
+
+    header ul {
+        list-style: none;
         padding: 0;
         margin: 0;
     }
 
-    .side-panel nav ul li {
-        margin: 10px 0; /* Adjust margin for better spacing */
-        text-align: center; /* Center the items */
+    header ul li {
+        text-align: center;
+        margin: 10px 0;
     }
 
-    .side-panel nav ul li a {
+    header ul li a {
         text-decoration: none;
         color: #333;
         display: block;
@@ -297,8 +320,8 @@ footer p {
         border-bottom: 2px solid transparent;
     }
 
-    .side-panel nav ul li a:hover {
+    header ul li a:hover {
         color: #1a73e8; /* Dark blue color on hover */
-        /*border-bottom: 2px solid #1a73e8;*/
     }
 }
+
