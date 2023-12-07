@@ -244,30 +244,30 @@ footer p {
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
-    /* Hiding unnecessary blocks and adjusting layout for small screens */
+    /* Hide unnecessary blocks */
     .block-1,
     .block-3 {
-        display: none; /* Hide blocks 1 and 3 */
+        display: none;
     }
 
     /* Hide the side panel */
     .side-panel {
-        display: none !important; /* Hide the side panel (important to override other rules) */
+        display: none;
     }
 
-    /* Adjust content layout */
+    /* Adjust content layout for mobile */
     .content {
         margin-left: 0;
         padding: 10px;
     }
 
-    /* Display the navigation dropdown */
+    /* Show the navigation dropdown */
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: #fff;
-        padding: 10px 20px;
+        padding: 20px 20px;
         position: fixed;
         top: 0;
         width: 100%;
@@ -275,6 +275,7 @@ footer p {
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     }
 
+    /* Style the navigation dropdown */
     header nav {
         display: none;
         position: absolute;
@@ -285,11 +286,12 @@ footer p {
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     }
 
+    /* Display navigation on hover */
     header:hover nav {
         display: block;
     }
 
-    /* Adjust styles for navigation links */
+    /* Style navigation links */
     header nav ul {
         list-style: none;
         padding: 0;
