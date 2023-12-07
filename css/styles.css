@@ -244,32 +244,59 @@ footer p {
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
-    .side-panel {
-        width: 100%;
-        position: static; /* Change to 'static' to remove fixed positioning */
+    /* Hiding unnecessary blocks and adjusting layout for small screens */
+    .block-1, .block-3 {
+        display: none; /* Hide blocks 1 and 3 */
     }
 
-    .block-1,
-    .block-3 {
-        flex-basis: unset; /* Reset flex-basis */
-        width: 100%; /* Make blocks occupy full width on mobile */
+    .side-panel {
+        width: auto; /* Adjust width to fit content */
+        position: static; /* Remove fixed positioning for mobile */
+    }
+
+    .content {
+        margin-left: 0; /* Remove margin for full-width content on mobile */
+        padding: 10px; /* Adjust padding for better spacing */
+    }
+
+    /* Displaying only block 2 content */
+    .block-2 {
+        flex: 1; /* Take full width */
         margin-right: 0; /* Remove right margin */
     }
 
-    .block-1:empty,
-    .block-3:empty {
-        display: none; /* Hide empty blocks on mobile */
+    /* Converting navigation into a dropdown menu */
+    .side-panel .header {
+        display: none; /* Hide header */
     }
 
-    nav ul li {
-        margin: 5px 0; /* Adjust list item margins */
+    .side-panel nav ul {
+        display: block; /* Display as a block for dropdown */
+        text-align: center; /* Center the items */
     }
 
-    main {
-        margin-left: 0;
-        padding: 10px;
+    .side-panel nav ul li {
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+
+    /* Logo in the top left corner */
+    .logo-with-text {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-with-text img {
+        max-width: 50px; /* Adjust the max-width of the logo */
+        margin-right: 5px; /* Adjust the spacing between logo and text */
+    }
+
+    /* Menu to the right */
+    .side-panel nav {
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
 }
-
-
-
