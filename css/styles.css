@@ -87,6 +87,9 @@ body {
 .content {
     margin-left: var(--max-side-panel-width); /* Set content margin to max width of side panel */
   }
+  footer {
+    width: calc(100% + var(--max-side-panel-width));
+  }
 }
 
 /* Footer Styles */
@@ -96,7 +99,7 @@ footer {
     padding: 5px; /* Smaller padding for a compact footer */
     background-color: #333;
     color: #fff;
-    width: calc(100% + 300px); /* Make the footer span the entire width */
+    width: calc(100% + var(--side-panel-width)); /* Make the footer span the entire width */
     height: 20px; /* Smaller height for the footer */
     position: absolute;
     bottom: 0;
