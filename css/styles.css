@@ -351,7 +351,12 @@ footer p {
         align-items: flex-start; /* Align content to the top */
        min-height: auto; /* Reset min-height for mobile */
     }
-      footer {
+  body {
+    position: relative; /* Add relative positioning to the body */
+    margin: 0;
+    padding: 0;
+}
+footer {
     text-align: center;
     padding: 5px; /* Smaller padding for a compact footer */
     background-color: #333;
@@ -360,7 +365,7 @@ footer p {
     height: 20px; /* Smaller height for the footer */
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0; /* Align the footer to the left */
     z-index: 1;
     font-size: 14px; /* Reduce footer font size */
 }
