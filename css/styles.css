@@ -345,4 +345,14 @@ footer p {
         flex: 1 1 100%; /* Occupies full width */
         margin-right: 0; /* No need for right margin */
     }
+
+  /* Adjust content layout for mobile */
+    .content {
+        margin-left: 0;
+        padding: 0; /* Set padding to zero */
+        padding-top: 20px; /* Adjust top padding to provide space */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align content to the top */
+    }
 }
