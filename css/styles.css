@@ -339,4 +339,10 @@ footer p {
     header nav ul li a:hover {
         color: #1a73e8;
     }
+  
+  /* Update block-2 to occupy 100% width */
+    .block-2 {
+        flex: 1 1 100%; /* Occupies full width */
+        margin-right: 0; /* No need for right margin */
+    }
 }
