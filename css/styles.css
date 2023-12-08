@@ -5,6 +5,10 @@
   --max-side-panel-width: 300px; /* Define max side panel width */
 }
 
+.navbar-mobile {
+    display: none;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -293,6 +297,7 @@ footer p {
         flex-direction: column;
         align-items: flex-start; /* Align content to the top */
        min-height: auto; /* Reset min-height for mobile */
+      padding-top: 60px;
     }
   body {
     position: relative; /* Add relative positioning to the body */
@@ -315,11 +320,14 @@ footer {
 
   /* New styles for the mobile navigation bar */
     .navbar-mobile {
-        display: flex;
+        display: block;
+        position: fixed;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        background-color: #f3f3f3; /* Add background color */
+        top: 0;
+        width: 100%;
+        background-color: #fff;
     }
 
     .navbar-links ul {
