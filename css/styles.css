@@ -64,7 +64,7 @@ body {
 }
 
 .content {
-    margin-left: clamp(25%, 300px, calc(100vw - 300px)); /* Adjusted margin accounting for side panel */
+    margin-left: 25%; /* Adjusted margin accounting for side panel */
     background-color: #000;
     color: #fff;
     padding: 20px;
