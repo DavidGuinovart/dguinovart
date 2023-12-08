@@ -330,6 +330,7 @@ footer {
         width: 100%;
         background-color: #fff;
         color: #000;
+        z-index: 9999;
     }
 
     .navbar-links ul {
