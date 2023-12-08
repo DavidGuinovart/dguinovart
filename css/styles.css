@@ -262,11 +262,17 @@ footer p {
     /* Additional styling for the link can be added here */
 }
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     /* Hide unnecessary blocks */
     .block-1,
     .block-3 {
+        display: none;
+    }
+
+    /* Hide the side panel */
+    .side-panel {
         display: none;
     }
 
@@ -291,41 +297,34 @@ footer p {
     }
 
     /* Style the navigation dropdown */
-    .mobile-nav-toggle {
-        display: block;
-        cursor: pointer;
-        /* Add styling for your mobile navigation toggle button */
-    }
-
-    /* Navigation dropdown container */
-    .mobile-nav {
+    header nav {
         display: none;
         position: absolute;
         top: 100%;
-        right: 20px; /* Adjust position from the right edge */
+        left: 0;
+        width: 100%;
         background-color: #fff;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 998; /* Lower z-index than header to keep it below */
     }
 
-    /* Show navigation dropdown when the toggle is clicked */
-    .mobile-nav-toggle:checked + .mobile-nav {
+    /* Display navigation on hover */
+    header:hover nav {
         display: block;
     }
 
     /* Style navigation links */
-    .mobile-nav ul {
+    header nav ul {
         list-style: none;
         padding: 0;
         margin: 0;
     }
 
-    .mobile-nav ul li {
+    header nav ul li {
         text-align: center;
         margin: 10px 0;
     }
 
-    .mobile-nav ul li a {
+    header nav ul li a {
         text-decoration: none;
         color: #333;
         display: block;
@@ -334,7 +333,7 @@ footer p {
         border-bottom: 2px solid transparent;
     }
 
-    .mobile-nav ul li a:hover {
+    header nav ul li a:hover {
         color: #1a73e8;
     }
-}
+} 
