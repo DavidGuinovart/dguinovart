@@ -77,12 +77,6 @@ body {
     position: relative;
     padding-bottom: 40px; /* Reserve space for the footer */
 }
-@media screen and (max-width: 974px) {
-  .block-1,
-  .block-3 {
-        display: none;
-    }
-}
 
 /* Media query for larger screens */
 @media screen and (min-width: 1200px) {
