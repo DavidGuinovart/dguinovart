@@ -347,5 +347,6 @@ footer {
     .navbar-links ul li a {
         text-decoration: none;
         color: #333; /* Link color */
+        font-size: 10px;
     }
 }
