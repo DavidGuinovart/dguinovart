@@ -5,10 +5,6 @@
   --max-side-panel-width: 300px; /* Define max side panel width */
 }
 
-.navbar-mobile {
-    display: none;
-}
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -268,6 +264,11 @@ footer p {
     text-decoration: none; /* Remove underline from the link */
     /* Additional styling for the link can be added here */
 }
+
+.navbar-mobile {
+    display: none;
+}
+
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
