@@ -267,6 +267,13 @@ footer p {
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
+  
+    /* Hide blocks 1 and 3 when empty */
+    .block-1:empty,
+    .block-3:empty {
+        display: none;
+    }
+  
     /* Hide the side panel */
     .side-panel {
         display: none;
