@@ -355,4 +355,10 @@ footer p {
         flex-direction: column;
         align-items: flex-start; /* Align content to the top */
     }
+
+    /* Reset margins and padding for block-2 */
+    .block-2 {
+        margin: 0; /* Reset margins */
+        padding: 20px; /* Add padding for content inside block-2 */
+    }
 }
