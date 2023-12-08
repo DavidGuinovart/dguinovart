@@ -57,7 +57,7 @@ body {
 }
 
 .content {
-    margin-left: 25%; /* Adjust margin to account for side panel width */
+    margin-left: clamp(25%, 300px, calc(100vw - 300px)); /* Adjusted margin accounting for side panel */
     background-color: #000;
     color: #fff;
     padding: 20px;
