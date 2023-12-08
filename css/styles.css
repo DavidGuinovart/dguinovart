@@ -312,4 +312,29 @@ footer {
     z-index: 1;
     font-size: 14px; /* Reduce footer font size */
 }
+
+  /* New styles for the mobile navigation bar */
+    .navbar-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #f3f3f3; /* Add background color */
+    }
+
+    .navbar-links ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar-links ul li {
+        margin-right: 15px;
+    }
+
+    .navbar-links ul li a {
+        text-decoration: none;
+        color: #333; /* Link color */
+    }
 }
