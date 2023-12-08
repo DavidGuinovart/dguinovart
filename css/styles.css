@@ -1,4 +1,10 @@
 /* Global Styles */
+
+:root {
+  --side-panel-width: 25%; /* Set initial side panel width */
+  --max-side-panel-width: 300px; /* Define max side panel width */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -7,13 +13,14 @@ body {
     display: flex;
     min-height: 100vh; /* Full viewport height */
 }
+
 .side-panel {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 25%; /* Set side panel width to 25% of the screen */
-    max-width: 300px; /* Maximum width for the side panel */
+    width: var(--side-panel-width); /* Set side panel width to 25% of the screen */
+    max-width: var(--max-side-panel-width);; /* Maximum width for the side panel */
     background-color: #fff;
     padding-top: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -69,6 +76,17 @@ body {
     flex-direction: column;
     position: relative;
     padding-bottom: 40px; /* Reserve space for the footer */
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 1200px) {
+  .side-panel {
+    width: var(--max-side-panel-width); /* Set the side panel width to the maximum width */
+  }
+  
+.content {
+    margin-left: var(--max-side-panel-width); /* Set content margin to max width of side panel */
+  }
 }
 
 /* Footer Styles */
