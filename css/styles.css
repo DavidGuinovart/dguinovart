@@ -264,12 +264,6 @@ footer p {
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
-    /* Hide unnecessary blocks */
-    .block-1,
-    .block-3 {
-        display: none;
-    }
-
     /* Hide the side panel */
     .side-panel {
         display: none;
@@ -335,4 +329,4 @@ footer p {
     header nav ul li a:hover {
         color: #1a73e8;
     }
-} 
+}
