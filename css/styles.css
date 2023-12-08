@@ -12,10 +12,12 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 300px; /* Increased width for the navigation panel */
+    width: 25%; /* Set side panel width to 25% of the screen */
+    max-width: 300px; /* Maximum width for the side panel */
     background-color: #fff;
     padding-top: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease; /* Add transition for smooth width change */
 }
 
 .side-panel .header {
@@ -55,7 +57,7 @@ body {
 }
 
 .content {
-    margin-left: 300px;
+    margin-left: 25%; /* Adjust margin to account for side panel width */
     background-color: #000;
     color: #fff;
     padding: 20px;
