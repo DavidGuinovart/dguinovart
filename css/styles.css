@@ -344,21 +344,16 @@ footer p {
     .block-2 {
         flex: 1 1 100%; /* Occupies full width */
         margin-right: 0; /* No need for right margin */
+        padding: 20px; /* Add padding for content inside block-2 */
     }
 
   /* Adjust content layout for mobile */
     .content {
         margin-left: 0;
-        padding: 0; /* Set padding to zero */
-        padding-top: 20px; /* Adjust top padding to provide space */
+        padding: 10px;
         display: flex;
         flex-direction: column;
         align-items: flex-start; /* Align content to the top */
     }
 
-    /* Reset margins and padding for block-2 */
-    .block-2 {
-        margin: 0; /* Reset margins */
-        padding: 20px; /* Add padding for content inside block-2 */
-    }
 }
